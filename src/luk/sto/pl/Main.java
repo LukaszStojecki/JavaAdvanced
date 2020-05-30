@@ -1,5 +1,6 @@
 package luk.sto.pl;
 
+import luk.sto.pl.factory.AbstractRace;
 import luk.sto.pl.model.Bike;
 import luk.sto.pl.model.Car;
 import luk.sto.pl.model.Vehicle;
@@ -20,6 +21,26 @@ public class Main {
 
         //System.out.println(speed);
        // System.out.println(name);
+
+        AbstractRace race = AbstractRace.getRace(vehicle);
+        System.out.println(race.getLapsNumber());
+
+        Vehicle v1 = new Vehicle() {//klasa anonimowa
+            @Override
+            protected void acceleration(int speed) {
+
+            }
+
+            @Override
+            public void start() {
+
+            }
+
+            @Override
+            public void stop() {
+
+            }
+        };
 
     }
 }
