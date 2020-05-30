@@ -3,9 +3,9 @@ package luk.sto.pl.model;
 public class Bike extends Vehicle{
 
     @Override
-    protected boolean acceleration(int speed) {
+    protected void acceleration(int speed) {
         System.out.println("Accelerate as a bike");
-        return false;
+
     }
 
     public Bike(String name) {
@@ -13,5 +13,15 @@ public class Bike extends Vehicle{
     }
 
     public Bike() {
+    }
+
+    @Override
+    public void start() {
+
+    }
+
+    @Override
+    public void stop() {
+
     }
 }

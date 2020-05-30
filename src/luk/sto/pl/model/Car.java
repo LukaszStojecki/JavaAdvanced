@@ -1,17 +1,33 @@
 package luk.sto.pl.model;
 
-public class Car extends Vehicle{
+public class Car extends Vehicle {
+
+    private Engine engine = new FuelEngine();
 
     @Override
-    protected boolean acceleration(int speed) {
-        System.out.println("Acceleration as a Car");
-        return false;
+    protected void acceleration(int speed) {
+        engine.setSpeed(speed);
+        //System.out.println("Accelerate as a Car");
+
     }
 
-    public Car(String name){
+    public Car(String name) {
         super(name);
     }
-    public  Car(){
+
+    public Car() {
+
+    }
+
+    @Override
+    public void start() {
+        engine.start();
+
+    }
+
+    @Override
+    public void stop() {
+        engine.stop();
 
     }
 

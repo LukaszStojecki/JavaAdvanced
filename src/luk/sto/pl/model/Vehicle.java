@@ -14,7 +14,7 @@ public abstract class Vehicle {
         this.acceleration(speed);
     }
 
-    protected abstract boolean acceleration(int speed);
+    protected abstract void acceleration(int speed);
 
 
     public String getName() {
@@ -28,18 +28,13 @@ public abstract class Vehicle {
     public Vehicle(String name) {
         this.name = name;
     }
-    public Vehicle(){
+
+    public Vehicle() {
         System.out.println("Vehicle");
     }
 
-    public void start(){
-        System.out.println("Vehicle started!");
+    public abstract void start();
 
-    }
-
-    public void stop(){
-        System.out.println("Vehicle stopped");
-
-    }
+    public abstract void stop();
 
 }
