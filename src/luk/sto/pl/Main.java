@@ -1,10 +1,31 @@
 package luk.sto.pl;
 
-import luk.sto.pl.factory.AbstractRace;
+import luk.sto.pl.abstractFactory.AbstractRace;
+import luk.sto.pl.enumeration.ProductType;
+import luk.sto.pl.factoryMethod.Implementation1;
+import luk.sto.pl.factoryMethod.Implementation2;
+import luk.sto.pl.factoryMethod.Service;
+import luk.sto.pl.factoryMethod.ServiceFactory;
 import luk.sto.pl.model.Car;
 import luk.sto.pl.model.Vehicle;
+import luk.sto.pl.strategy.CarTypeStrategy;
 
 public class Main {
+
+    public static void serviceConsumer(ServiceFactory factory) {
+
+        Service service = factory.getService();
+        service.method1();
+        service.method2();
+
+
+    }
+
+    private static void iterateEnum() {
+        for (ProductType productType: ProductType.values()) {
+            System.out.println(productType + " description = " + productType.getNumericValue());
+        }
+    }
 
     public static void main(String[] args) {
         // System.out.println("Start");
@@ -14,28 +35,33 @@ public class Main {
 
         Integer speed = vehicle.getSpeed();
 
+        vehicle.start();
         vehicle.setSpeed(10);
 
         AbstractRace race = AbstractRace.getRace(vehicle);
 
         System.out.println(race.getLapsNumber());
 
-        Vehicle v1 = new Vehicle() {
-            @Override
-            protected void accelerate(int speed) {
-
-            }
+        CarTypeStrategy cabriolet = new CarTypeStrategy() {
 
             @Override
-            public void start() {
-
-            }
-
-            @Override
-            public void stop() {
-
+            public String getType() {
+                return "cabriolet";
             }
         };
+
+        final Car car = (Car) vehicle;
+        car.setTypeStrategy(cabriolet);
+
+        System.out.println(car.getType());
+
+        /*
+        * factory method
+        *
+        serviceConsumer(Implementation1.factory);
+        serviceConsumer(Implementation2.factory);*/
+
+        iterateEnum();
 
     }
 }

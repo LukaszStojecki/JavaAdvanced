@@ -1,5 +1,6 @@
 package luk.sto.pl.model;
 
+import luk.sto.pl.exception.NotStartedEngineException;
 import luk.sto.pl.strategy.CarTypeStrategy;
 
 public class Car extends Vehicle {
@@ -9,23 +10,25 @@ public class Car extends Vehicle {
     private CarTypeStrategy typeStrategy;
 
     @Override
-    protected void accelerate(int speed) {
-        if(stared) {
+    protected void accelerate(int speed) throws NotStartedEngineException {
+        if(started) {
             engine.setSpeed(speed);
-        } //todo - throw exception
+        } else {
+            throw new NotStartedEngineException("Acceleration of stopped engine");
+        }
 
 
     }
 
     @Override
     public void start() {
-        stared = true;
+        started = true;
         engine.start();
     }
 
     @Override
     public void stop() {
-        stared = false;
+        started = false;
         engine.stop();
     }
 

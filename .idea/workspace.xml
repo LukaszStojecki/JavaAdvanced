@@ -3,21 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="be3d4f7d-7c98-4474-8f9a-472b78d58415" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Composition/luk/sto/pl/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Composition/luk/sto/pl/factory/AbstractRace.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Composition/luk/sto/pl/factory/CarRace.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Composition/luk/sto/pl/model/Bike.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Composition/luk/sto/pl/model/Car.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Composition/luk/sto/pl/model/Engine.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Composition/luk/sto/pl/model/FuelEngine.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Composition/luk/sto/pl/model/Vehicle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/luk/sto/pl/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/luk/sto/pl/factory/AbstractRace.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/luk/sto/pl/factory/CarRace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/luk/sto/pl/factory/CarRace.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/luk/sto/pl/model/Bike.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/luk/sto/pl/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/luk/sto/pl/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/luk/sto/pl/model/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/luk/sto/pl/model/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/luk/sto/pl/model/Engine.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/luk/sto/pl/model/FuelEngine.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/luk/sto/pl/model/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/luk/sto/pl/model/Vehicle.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

@@ -1,20 +1,19 @@
 package luk.sto.pl.model;
 
+import luk.sto.pl.exception.NotStartedEngineException;
+
 public abstract class Vehicle {
 
     private String name;
 
     private Integer speed;
 
-    public boolean isStared() {
-        return stared;
+    public boolean isStarted() {
+        return started;
     }
 
-    /*
-    * todo
-    * */
-    protected boolean stared;
-    protected abstract void accelerate(int speed);
+    protected boolean started;
+    protected abstract void accelerate(int speed) throws NotStartedEngineException;
 
     public Integer getSpeed() {
         return speed;
@@ -22,7 +21,15 @@ public abstract class Vehicle {
 
     public void setSpeed(Integer speed) {
         this.speed = speed;
-        this.accelerate(speed);
+        //try{
+            this.accelerate(speed);
+       /* }catch (NotStartedEngineException e) {
+            System.out.println(e.getMessage());
+            //e.printStackTrace();
+        }finally {
+            System.out.println("Finally");
+        }*/
+
     }
 
     public String getName() {
