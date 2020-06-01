@@ -2,17 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be3d4f7d-7c98-4474-8f9a-472b78d58415" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/luk/sto/pl/factory/AbstractRace.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/luk/sto/pl/factory/CarRace.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Composition/luk/sto/pl/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Composition/luk/sto/pl/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/luk/sto/pl/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/luk/sto/pl/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Composition/luk/sto/pl/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Composition/luk/sto/pl/factory/AbstractRace.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Composition/luk/sto/pl/factory/CarRace.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Composition/luk/sto/pl/model/Bike.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Composition/luk/sto/pl/model/Car.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Composition/luk/sto/pl/model/Engine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Composition/luk/sto/pl/model/FuelEngine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Composition/luk/sto/pl/model/Vehicle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/luk/sto/pl/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/luk/sto/pl/factory/AbstractRace.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/luk/sto/pl/factory/CarRace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/luk/sto/pl/factory/CarRace.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/luk/sto/pl/model/Bike.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/luk/sto/pl/model/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/luk/sto/pl/model/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/luk/sto/pl/model/Engine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/luk/sto/pl/model/FuelEngine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/luk/sto/pl/model/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/luk/sto/pl/model/Vehicle.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Composition" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -28,6 +43,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../oop-master/oop-master/src/com/company/Main.java" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -76,7 +92,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

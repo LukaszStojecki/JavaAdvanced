@@ -1,18 +1,10 @@
 package luk.sto.pl.model;
 
-public class Bike extends Vehicle{
+public class Bike extends Vehicle {
 
     @Override
-    protected void acceleration(int speed) {
+    protected void accelerate(int speed) {
         System.out.println("Accelerate as a bike");
-
-    }
-
-    public Bike(String name) {
-        super(name);
-    }
-
-    public Bike() {
     }
 
     @Override
@@ -23,5 +15,12 @@ public class Bike extends Vehicle{
     @Override
     public void stop() {
 
+    }
+
+    public Bike() {
+    }
+
+    public Bike(String name) {
+        super(name);
     }
 }

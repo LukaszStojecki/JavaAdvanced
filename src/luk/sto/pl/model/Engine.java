@@ -17,21 +17,16 @@ public abstract class Engine {
 
     protected void injectPower(Integer power) {
         this.working(power);
-
     }
 
     protected void start() {
         injectPower(1);
     }
-
     protected void stop() {
         injectPower(0);
     }
-
     protected void accelerate(Integer value) {
         injectPower(value);
     }
 
-
 }
-

@@ -3,19 +3,27 @@ package luk.sto.pl.model;
 public abstract class Vehicle {
 
     private String name;
-    private int speed;
 
-    public int getSpeed() {
+    private Integer speed;
+
+    public boolean isStared() {
+        return stared;
+    }
+
+    /*
+    * todo
+    * */
+    protected boolean stared;
+    protected abstract void accelerate(int speed);
+
+    public Integer getSpeed() {
         return speed;
     }
 
-    public void setSpeed(int speed) {
+    public void setSpeed(Integer speed) {
         this.speed = speed;
-        this.acceleration(speed);
+        this.accelerate(speed);
     }
-
-    protected abstract void acceleration(int speed);
-
 
     public String getName() {
         return name;
@@ -25,16 +33,15 @@ public abstract class Vehicle {
         this.name = name;
     }
 
-    public Vehicle(String name) {
-        this.name = name;
-    }
+    public abstract void start();
+
+    public abstract void stop();
 
     public Vehicle() {
         System.out.println("Vehicle");
     }
 
-    public abstract void start();
-
-    public abstract void stop();
-
+    public Vehicle(String name) {
+        this.name = name;
+    }
 }
